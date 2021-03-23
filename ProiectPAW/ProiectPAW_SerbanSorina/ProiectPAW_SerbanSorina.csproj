@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2459FE2E-E47D-4B46-B730-9A904B5ABFCE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProiectPAW_SerbanSorina</RootNamespace>
+    <AssemblyName>ProiectPAW_SerbanSorina</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SearchUserControl">
+      <HintPath>..\SearchUserControl\SearchUserControl\bin\Debug\SearchUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="Comanda.cs" />
+    <Compile Include="Form1_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1_Login.Designer.cs">
+      <DependentUpon>Form1_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_Clienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Clienti.Designer.cs">
+      <DependentUpon>Form2_Clienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3_Comenzi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3_Comenzi.Designer.cs">
+      <DependentUpon>Form3_Comenzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4_adauga_utilizator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4_adauga_utilizator.Designer.cs">
+      <DependentUpon>Form4_adauga_utilizator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5_vezi_utilizatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_vezi_utilizatori.Designer.cs">
+      <DependentUpon>Form5_vezi_utilizatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6_adauga_client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6_adauga_client.Designer.cs">
+      <DependentUpon>Form6_adauga_client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7_adauga_comanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7_adauga_comanda.Designer.cs">
+      <DependentUpon>Form7_adauga_comanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8_setari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8_setari.Designer.cs">
+      <DependentUpon>Form8_setari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pizza.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilizator.cs" />
+    <EmbeddedResource Include="Form1_Login.resx">
+      <DependentUpon>Form1_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_Clienti.resx">
+      <DependentUpon>Form2_Clienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3_Comenzi.resx">
+      <DependentUpon>Form3_Comenzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4_adauga_utilizator.resx">
+      <DependentUpon>Form4_adauga_utilizator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_vezi_utilizatori.resx">
+      <DependentUpon>Form5_vezi_utilizatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6_adauga_client.resx">
+      <DependentUpon>Form6_adauga_client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7_adauga_comanda.resx">
+      <DependentUpon>Form7_adauga_comanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8_setari.resx">
+      <DependentUpon>Form8_setari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gaussian-abstract-wallpapers-colors-background-simple-abstract-wallpapers-full-hd-art-blurdownload-stock-images.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
